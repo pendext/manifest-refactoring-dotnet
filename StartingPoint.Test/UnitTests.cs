@@ -26,6 +26,8 @@ namespace StartingPoint
 		Customer m_DonaldDuck;
 		Customer m_MinnieMouse;
 
+        DateProcessor dateProcessor;
+
 		/* Methods */
 
 		[SetUp]
@@ -45,6 +47,8 @@ namespace StartingPoint
 			m_MickeyMouse = new Customer("Mickey Mouse");
 			m_DonaldDuck = new Customer("Donald Duck");
 			m_MinnieMouse = new Customer("Minnie Mouse");
+
+            dateProcessor = new DateProcessor();
 		}
 
 		[Test]
@@ -129,6 +133,12 @@ namespace StartingPoint
 			Assert.That("Gladiator", Is.EqualTo(results[8]));
 			Assert.That(15, Is.EqualTo(Convert.ToDouble(results[9])));
 		}
+
+        [Test]
+        public void TestDateProcessor
+        {
+            
+        }
 
 	}
 }
