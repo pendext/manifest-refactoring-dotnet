@@ -73,12 +73,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Customer.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DateProcessor.cs" />
     <Compile Include="MainClass.cs">
       <SubType>Code</SubType>
     </Compile>

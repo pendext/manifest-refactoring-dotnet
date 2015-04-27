@@ -9,6 +9,17 @@ namespace StartingPoint
         private DateTime startDate;
         private DateTime dueDate;
 
+        public DateTime StartDate
+        {
+            get { return startDate; }
+            set { startDate = value; }
+        }
+
+        public DateTime DueDate
+        {
+            get { return dueDate; }
+            set { dueDate = value; }
+        }
 
         public void setStartDate(DateTime startDate)
         {
